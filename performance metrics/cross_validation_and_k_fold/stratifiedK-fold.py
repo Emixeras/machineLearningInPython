@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn import model_selection
 import seaborn as sns
 
-df = pd.read_csv("/home/felix/PycharmProjects/pythonProject/data/winequality-red.csv")
+df = pd.read_csv("/home/felix/PycharmProjects/machineLearningInPython/machineLearningInPython/data/winequality-red.csv")
 df["kfold"] = -1
 
 df = df.sample(frac=1).reset_index(drop=True)
